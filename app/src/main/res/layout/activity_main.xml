@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
@@ -7,8 +8,36 @@
 
     <Button
         android:id="@+id/btnTranslateMe"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/translate_me"/>
+        android:text="@string/translate_me" />
+
+    <Button
+        android:id="@+id/btnAlphaMe"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alpha_me" />
+
+    <Button
+        android:id="@+id/btnRotateMe"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rotate_me" />
+
+    <Button
+        android:id="@+id/btnScaleMe"
+        android:layout_marginTop="350dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scale_me" />
+
+
     
 </FrameLayout>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">cs541p3</string>
     <string name="translate_me">translate_me</string>
+    <string name="alpha_me">alpha_me</string>
+    <string name="rotate_me">rotate_me</string>
+    <string name="scale_me">scale_me</string>
 </resources>
