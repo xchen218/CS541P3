@@ -34,9 +34,10 @@ public class MainActivity extends AppCompatActivity {
         sa = new ScaleAnimation(0, 10, 0, 10, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
         sa.setDuration(1500);
 
-        findViewById(R.id.btnTranslateMe).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnTranslateMe).setOnClickListener(new ImageView.OnClickListener() {
             @Override
             public void onClick(View translateview) {
+                translateview = findViewById(R.id.exampleimage);
                 translateview.startAnimation(ta);
             }
         });
