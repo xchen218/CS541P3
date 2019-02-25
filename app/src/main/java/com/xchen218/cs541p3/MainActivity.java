@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         ra.setDuration(1500);
 
         sa = new ScaleAnimation(0, 10, 0, 10, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        sa.setDuration(1500);
+        sa.setDuration(5000);
 
         findViewById(R.id.btnTranslateMe).setOnClickListener(new ImageView.OnClickListener() {
             @Override
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnAlphaMe).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View alphaview) {
+                alphaview = findViewById(R.id.exampleimage);
                 alphaview.startAnimation(aa);
             }
         });
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnRotateMe).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View rotateview) {
+                rotateview = findViewById(R.id.exampleimage);
                 rotateview.startAnimation(ra);
             }
         });
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnScaleMe).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View scaleview) {
+                scaleview = findViewById(R.id.exampleimage);
                 scaleview.startAnimation(sa);
             }
         });
